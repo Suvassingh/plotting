@@ -6,7 +6,7 @@ graph = nx.Graph()
 
 # Add nodes and edges
 graph.add_edges_from([
-    (1, 2, {'weight': 4}),
+    (1, 2, {'weight': 3}),
     (1, 3, {'weight': 2}),
     (2, 3, {'weight': 1}),
     (2, 4, {'weight': 5}),
