@@ -1,0 +1,17 @@
+# Real-life example: Car rental cost
+distance = np.linspace(0, 100, 100)
+m_cost_per_mile = 2  # $ per mile
+c_base_fee = 50  # Base fee in $
+cost = m_cost_per_mile * distance + c_base_fee
+
+# Plot
+plt.figure(figsize=(8, 6))
+plt.plot(distance, cost, label="Cost = 2 × Distance + 50", color='green')
+plt.title("Car Rental Cost")
+plt.xlabel("Distance (miles)")
+plt.ylabel("Cost ($)")
+plt.axhline(0, color='black', linewidth=0.8, linestyle="--")  # x-axis
+plt.axvline(0, color='black', linewidth=0.8, linestyle="--")  # y-axis
+plt.grid()
+plt.legend()
+plt.show()
